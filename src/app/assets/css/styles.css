@@ -1,0 +1,674 @@
+/*
+  Theme Name: Dex.AI - AI Writer & Tech Startup Landing Page Template.
+  Support: themeadapt@gmail.com
+  Description: Dex.AI - AI Writer & Tech Startup Landing Page Template.
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Variable CSS
+02. Header
+03. Mobile Menu
+04. Banner
+05. Breadcrumb
+06. Video
+07. Vioces
+08. About
+09. Services
+10. Counter
+11. Features
+12. Writing
+13. Speech
+14. Use-Cases
+15. Roadmap
+16. Language
+17. Pricing
+18. Team
+19. Tools
+20. Compare
+21. Work
+22. Testimonial
+23. Faq
+24. Help
+25. CTA
+26. Brand
+27. Blog
+28. Contact
+29. Error
+30. Login
+31. Footer
+32. Preloader
+============================
+*/
+
+
+
+/*=============================
+	1. Google Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*=============================
+	01. Variable CSS
+===============================*/
+:root {
+    --tg-body-font-family    : 'Outfit', sans-serif;
+    --tg-heading-font-family : 'Plus Jakarta Sans', sans-serif;
+    --tg-playfair-font-family: 'Playfair Display', serif;
+    --tg-primary-color       : #6721FF;
+    --tg-secondary-color     : #00CBFF;
+    --tg-gradient-color      : linear-gradient(89.78deg, #C8BDFF -31.69%, #BAA6FF -22.78%, #6721FF 27.93%, #00CBFF 99.79%);
+    --tg-gradient-color-two  : linear-gradient(87.22deg, #C8BDFF -1.82%, #BAA6FF 5.99%, #6721FF 50.47%, #00CBFF 113.5%);
+    --tg-gradient-color-three: linear-gradient(89.09deg, #FAEC60 -4.93%, #E5A34B 8.69%, #EE6E4D 20.84%, #F44380 37.75%,
+            #BE3DB3 52.82%, #7746E6 73.27%, #5A71F1 89.06%, #439EFF 101.36%);
+    ;
+    --tg-body-font-color    : #C8B8E8;
+    --tg-heading-font-color : #FFFFFF;
+    --tg-paragraph-color    : #C8B8E8;
+    --tg-body-font-size     : 16px;
+    --tg-body-font-weight   : 400;
+    --tg-heading-font-weight: 700;
+    --tg-body-line-height   : 1.75;
+    --tg-heading-line-height: 1.2;
+    --tg-blue               : #270A5F;
+    --tg-cetacean-blue      : #12032F;
+    --tg-indigo             : #6610f2;
+    --tg-purple             : #6f42c1;
+    --tg-pink               : #d63384;
+    --tg-red                : #dc3545;
+    --tg-orange             : #fd7e14;
+    --tg-yellow             : #FDCF6D;
+    --tg-green              : #198754;
+    --tg-teal               : #20c997;
+    --tg-cyan               : #00C39A;
+    --tg-white              : #ffffff;
+    --tg-black              : #0D0126;
+    --tg-black-two          : #160042;
+    --tg-black-three        : #151515;
+    --tg-black-four         : #222325;
+    --tg-gray               : #F1F3FA;
+    --tg-gray-two           : #474C56;
+    --tg-gray-three         : #ABABAB;
+    --tg-gray-four          : #F0F0F0;
+    --facebook              : #3b5998;
+    --twitter               : #00acee;
+    --linkedin              : #1976d2;
+    --pinterest             : #3b5998;
+    --youtube               : #c4302b;
+    --skype                 : #00aff0;
+}
+
+body {
+    font-family: var(--tg-body-font-family);
+    font-weight: var(--tg-body-font-weight);
+    font-size  : var(--tg-body-font-size);
+    line-height: var(--tg-body-line-height);
+    color      : var(--tg-body-font-color);
+    font-style : normal;
+}
+
+main.main-content {
+    position        : relative;
+    z-index         : 1;
+    background-color: var(--tg-black-two);
+}
+
+.noise-bg {
+    background-size    : cover;
+    background-position: center;
+    width              : 100%;
+    height             : 100%;
+    position           : absolute;
+    left               : 0;
+    top                : 0;
+    z-index            : -1;
+    mix-blend-mode     : soft-light;
+    opacity            : 0.7;
+}
+
+.main-shape {
+    left               : 0;
+    top                : 0;
+    position           : fixed;
+    background-position: center;
+    background-size    : cover;
+    width              : 100%;
+    height             : 100%;
+    z-index            : -1;
+}
+
+.main-content-two {
+    background: var(--tg-black-three);
+}
+
+img,
+.img {
+    max-width : 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+    float: left
+}
+
+.f-right {
+    float: right
+}
+
+.fix {
+    overflow: hidden
+}
+
+a,
+button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition   : all 0.3s ease-out 0s;
+    -ms-transition    : all 0.3s ease-out 0s;
+    -o-transition     : all 0.3s ease-out 0s;
+    transition        : all 0.3s ease-out 0s;
+    text-decoration   : none;
+}
+
+a:focus,
+.btn:focus,
+button:focus {
+    text-decoration: none;
+    outline        : none;
+    box-shadow     : none;
+}
+
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+    color          : var(--tg-secondary-color);
+    text-decoration: none;
+}
+
+a,
+button {
+    color          : var(--tg-primary-color);
+    outline        : medium none;
+    text-decoration: none;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family   : var(--tg-heading-font-family);
+    color         : var(--tg-heading-font-color);
+    margin-top    : 0px;
+    margin-bottom : .7rem;
+    font-style    : normal;
+    line-height   : var(--tg-heading-line-height);
+    font-weight   : var(--tg-heading-font-weight);
+    text-transform: inherit;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.list-wrap {
+    margin : 0px;
+    padding: 0px;
+}
+
+.list-wrap li {
+    list-style: none
+}
+
+p {
+    font-size    : var(--tg-body-font-size);
+    font-weight  : var(--tg-body-font-weight);
+    line-height  : var(--tg-body-line-height);
+    color        : var(--tg-paragraph-color);
+    margin-bottom: 15px;
+}
+
+hr {
+    border-bottom: 1px solid var(--tg-primary-color);
+    border-top   : 0 none;
+    margin       : 30px 0;
+    padding      : 0;
+}
+
+label {
+    color      : var(--tg-body-font-color);
+    cursor     : pointer;
+    font-size  : 16px;
+    font-weight: 400;
+}
+
+*::-moz-selection {
+    background : var(--tg-primary-color);
+    color      : var(--tg-white);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background : var(--tg-primary-color);
+    color      : var(--tg-white);
+    text-shadow: none;
+}
+
+::selection {
+    background : var(--tg-primary-color);
+    color      : var(--tg-white);
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    color    : var(--tg-body-font-color);
+    font-size: var(--tg-body-font-size);
+    opacity  : 1;
+}
+
+*::placeholder {
+    color    : var(--tg-body-font-color);
+    font-size: var(--tg-body-font-size);
+    opacity  : 1;
+}
+
+.theme-overlay {
+    position: relative
+}
+
+.theme-overlay::before {
+    background: var(--tg-primary-color) none repeat scroll 0 0;
+    content   : "";
+    height    : 100%;
+    left      : 0;
+    opacity   : 0.6;
+    position  : absolute;
+    top       : 0;
+    width     : 100%;
+}
+
+.separator {
+    border-top: 1px solid var(--tg-primary-color);
+}
+
+/* Bootstrap 5 */
+.container {
+    padding-left : 15px;
+    padding-right: 15px;
+}
+
+.row {
+    --bs-gutter-x: 30px;
+}
+
+.row.g-0 {
+    --bs-gutter-x: 0;
+}
+
+.gutter-y-30 {
+    --bs-gutter-y: 30px;
+}
+
+
+/*=============================
+	04. Banner
+===============================*/
+.banner-area {
+    padding : 205px 0 150px;
+    position: relative;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content .title {
+    font-size     : 70px;
+    letter-spacing: -0.01em;
+    width         : 90%;
+    margin        : 0 auto 30px;
+}
+
+.banner-content .title.d-none span,
+.banner-content .ah-headline .ah-words-wrapper .is-visible {
+    background             : var(--tg-gradient-color);
+    -webkit-text-fill-color: transparent;
+    font-weight            : 300;
+    -webkit-background-clip: text;
+    background-clip        : text;
+}
+
+.banner-content .ah-headline.clip .ah-words-wrapper::after {
+    content   : "";
+    position  : absolute;
+    top       : 10%;
+    right     : 0;
+    width     : 2px;
+    height    : 75%;
+    background: var(--tg-white);
+    bottom    : 0;
+    margin    : auto 0;
+}
+
+.banner-content .ah-headline span {
+    display: unset;
+    padding: unset;
+}
+
+.banner-content p {
+    font-size: 18px;
+    width    : 60%;
+    margin   : 0 auto 40px;
+}
+
+.banner-content .banner-btn {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 10px 30px;
+}
+
+/* banner-two */
+.banner-area-two {
+    padding   : 100px 0;
+    position  : relative;
+    background: var(--tg-white);
+    z-index   : 1;
+    overflow  : hidden;
+}
+
+.banner-content-two {
+    text-align: center;
+}
+
+.banner-content-two .title {
+    margin-bottom : 35px;
+    font-size     : 75px;
+    color         : var(--tg-black-two);
+    letter-spacing: -0.01em;
+}
+
+.banner-content-two .title span {
+    font-family: var(--tg-playfair-font-family);
+    font-style : italic;
+    font-weight: 600;
+}
+
+.banner-content-two .title strong {
+    font-weight: 600;
+    position   : relative;
+    z-index    : 1;
+}
+
+.banner-content-two .title strong svg {
+    position : absolute;
+    width    : 100%;
+    height   : auto;
+    left     : 0;
+    bottom   : 14px;
+    z-index  : -1;
+    animation: title-animation 4s infinite;
+}
+
+@keyframes title-animation {
+    0% {
+        width: 0;
+    }
+
+    15% {
+        width: 100%;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    90% {
+        width  : 100%;
+        opacity: 0;
+    }
+
+    to {
+        width  : 0;
+        opacity: 0;
+    }
+}
+
+.banner-content-two p {
+    color    : var(--tg-gray-two);
+    font-size: 18px;
+    width    : 75%;
+    margin   : 0 auto 50px;
+}
+
+.banner-btn-two {
+    display        : flex;
+    align-items    : center;
+    flex-wrap      : wrap;
+    justify-content: center;
+    gap            : 15px 30px;
+}
+
+.banner-shape-wrap img {
+    position: absolute;
+    z-index : -1;
+}
+
+.banner-shape-wrap img:nth-child(1) {
+    top : 45%;
+    left: 0;
+}
+
+.banner-shape-wrap img:nth-child(2) {
+    right: 0;
+    top  : 40%;
+}
+
+@keyframes alltuchtopdown {
+    0% {
+        -webkit-transform: rotateX(0deg) translateY(0px);
+        -moz-transform   : rotateX(0deg) translateY(0px);
+        -ms-transform    : rotateX(0deg) translateY(0px);
+        -o-transform     : rotateX(0deg) translateY(0px);
+        transform        : rotateX(0deg) translateY(0px);
+    }
+
+    50% {
+        -webkit-transform: rotateX(0deg) translateY(-20px);
+        -moz-transform   : rotateX(0deg) translateY(-20px);
+        -ms-transform    : rotateX(0deg) translateY(-20px);
+        -o-transform     : rotateX(0deg) translateY(-20px);
+        transform        : rotateX(0deg) translateY(-20px);
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg) translateY(0px);
+        -moz-transform   : rotateX(0deg) translateY(0px);
+        -ms-transform    : rotateX(0deg) translateY(0px);
+        -o-transform     : rotateX(0deg) translateY(0px);
+        transform        : rotateX(0deg) translateY(0px);
+    }
+}
+
+@-webkit-keyframes alltuchtopdown {
+    0% {
+        -webkit-transform: rotateX(0deg) translateY(0px);
+        -moz-transform   : rotateX(0deg) translateY(0px);
+        -ms-transform    : rotateX(0deg) translateY(0px);
+        -o-transform     : rotateX(0deg) translateY(0px);
+        transform        : rotateX(0deg) translateY(0px);
+    }
+
+    50% {
+        -webkit-transform: rotateX(0deg) translateY(-20px);
+        -moz-transform   : rotateX(0deg) translateY(-20px);
+        -ms-transform    : rotateX(0deg) translateY(-20px);
+        -o-transform     : rotateX(0deg) translateY(-20px);
+        transform        : rotateX(0deg) translateY(-20px);
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg) translateY(0px);
+        -moz-transform   : rotateX(0deg) translateY(0px);
+        -ms-transform    : rotateX(0deg) translateY(0px);
+        -o-transform     : rotateX(0deg) translateY(0px);
+        transform        : rotateX(0deg) translateY(0px);
+    }
+}
+
+.alltuchtopdown {
+    -webkit-animation : alltuchtopdown 1.5s ease-in-out 0s infinite alternate;
+    animation         : alltuchtopdown 1.5s ease-in-out 0s infinite alternate;
+    animation-duration: 3s;
+}
+
+.rotateme {
+    -webkit-animation-name           : rotateme;
+    animation-name                   : rotateme;
+    -webkit-animation-duration       : 10s;
+    animation-duration               : 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count        : infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function        : linear;
+}
+
+@keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform        : rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* banner-three */
+.banner-area-three {
+    background: var(--tg-black-three);
+    position  : relative;
+    padding   : 100px 0 110px;
+    z-index   : 1;
+}
+
+.banner-area-three .banner-shape {
+    position           : absolute;
+    left               : 0;
+    top                : 0;
+    width              : 100%;
+    height             : 100%;
+    background-size    : cover;
+    background-position: center;
+    opacity            : 0.3;
+    z-index            : -1;
+    background-image: url(/h3_banner_shape.png);
+}
+
+.banner-content-three .title {
+    background             : linear-gradient(179.14deg, #F0F0F0 7.77%, #171717 120.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip        : text;
+    font-weight            : 600;
+    letter-spacing         : -0.02em;
+    margin-bottom          : 20px;
+}
+
+.banner-content-three .title span {
+    font-family: var(--tg-playfair-font-family);
+    font-style : italic;
+    font-weight: 500;
+}
+
+/*=============================
+	13. Speech
+===============================*/
+.speech-area {
+    position  : relative;
+    padding   : 0 0 100px;
+    z-index   : 1;
+    background: var(--tg-black-three);
+}
+
+.speech-shape-wrap .shape-one {
+    position           : absolute;
+    background-size    : cover;
+    background-position: center;
+    height             : 282px;
+    width              : 100%;
+    left               : 0;
+    top                : 0;
+    z-index            : -1;
+    background-image: url(/speech_shape01.png);
+}
+
+.speech-shape-wrap .shape-two {
+    position           : absolute;
+    background-size    : cover;
+    background-position: center;
+    height             : 591px;
+    width              : 100%;
+    left               : 0;
+    bottom             : -200px;
+    z-index            : -1;
+    background-image: url(/speech_shape02.png);
+}
