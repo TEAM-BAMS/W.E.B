@@ -93,7 +93,7 @@ Contributions are welcomed! If you'd like to contribute to V.S.A.I, please follo
 
 ## License
 
-This project is licensed under the MIT License - see the [MIT LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [MIT LICENSE](https://github.com/subhadeeproy3902/vsai/blob/main/LICENSE) file for details.
 
 ## Contact
 
