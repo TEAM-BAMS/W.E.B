@@ -289,23 +289,6 @@ label {
     font-weight: 400;
 }
 
-*::-moz-selection {
-    background : var(--tg-primary-color);
-    color      : var(--tg-white);
-    text-shadow: none;
-}
-
-::-moz-selection {
-    background : var(--tg-primary-color);
-    color      : var(--tg-white);
-    text-shadow: none;
-}
-
-::selection {
-    background : var(--tg-primary-color);
-    color      : var(--tg-white);
-    text-shadow: none;
-}
 
 *::-moz-placeholder {
     color    : var(--tg-body-font-color);

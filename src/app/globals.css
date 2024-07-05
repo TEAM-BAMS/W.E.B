@@ -78,3 +78,7 @@
 .monaco-editor {
   padding-top: 0.5rem;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}

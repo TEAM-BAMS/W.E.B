@@ -170,7 +170,7 @@ export function Translator() {
               <Select
                 onValueChange={(value: string) => handleToLanguageChange(value)}
               >
-                <SelectTrigger className="border-none outline-none bg-neutral-800 text-white" font-semibold>
+                <SelectTrigger className="border-none outline-none bg-neutral-800 font-semibold text-white" >
                   {`${convertToLanguage.charAt(0).toUpperCase()}${convertToLanguage.slice(1)}`}
                 </SelectTrigger>
                 <SelectContent className="border-none outline-none bg-neutral-900 text-white font-semibold">
