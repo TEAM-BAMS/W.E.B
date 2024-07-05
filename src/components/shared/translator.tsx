@@ -8,6 +8,7 @@ import { Copy, Loader, Moon, Sun } from "lucide-react";
 import ClassicLoader from "./loading";
 import { languageOptions, codeSnippets } from "@/config/constant";
 import api from "@/lib/api";
+import { toast } from "sonner"
 
 export interface CodeSnippetsProps {
   [key: string]: string;
@@ -81,6 +82,12 @@ export function Translator() {
 
     const response = await api.generate(prompt)
     setLoading(false)
+    if (!response.startsWith("`")) {
+      toast.error("An error occurred while translating the code")
+    }
+    if (response.startsWith("`")) {
+      toast.success("Code Translated Successfully")
+    }
     setConvertedCode(
       response.startsWith("`") ?
         response.split("\n").slice(1, -1).join("\n")
@@ -90,16 +97,18 @@ export function Translator() {
 
   const handleNotConvertedCodeCopy = () => {
     navigator.clipboard.writeText(codeSnippet)
+    toast.success("Code Copied Successfully")
   }
 
   const handleConvertedCodeCopy = () => {
     navigator.clipboard.writeText(convertedCode)
+    toast.success("Code Copied Successfully")
   }
 
 
 
   return (
-    
+
     <div
       className="speech-area overflow-hidden"
     >
@@ -212,10 +221,10 @@ export function Translator() {
           </div>
         </div>
       </div>
-        <div className="speech-shape-wrap">
-          <div className="shape-one" data-background="/speech_shape01.png" />
-          <div className="shape-two" data-background="/speech_shape02.png" />
-        </div>
+      <div className="speech-shape-wrap">
+        <div className="shape-one" data-background="/speech_shape01.png" />
+        <div className="shape-two" data-background="/speech_shape02.png" />
+      </div>
     </div>
   )
 }
