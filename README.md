@@ -101,7 +101,7 @@ For questions or suggestions, feel free to reach out:
 
 - Email: [subha9.5roy350@gmail.com](mailto:subha9.5roy350@gmail.com)
 
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/subhadeep3902)
+- LinkedIn: [My LinkedIn Profile](https://linkedin.com/in/subhadeep3902)
 
 ---
 
