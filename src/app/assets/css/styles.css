@@ -56,48 +56,53 @@
     --tg-body-font-family    : 'Outfit', sans-serif;
     --tg-heading-font-family : 'Plus Jakarta Sans', sans-serif;
     --tg-playfair-font-family: 'Playfair Display', serif;
-    --tg-primary-color       : #6721FF;
-    --tg-secondary-color     : #00CBFF;
+
+    --tg-primary-color       : #6721FF; /* Main brand color */
+    --tg-secondary-color     : #00CBFF; /* Accent color */
+
     --tg-gradient-color      : linear-gradient(89.78deg, #C8BDFF -31.69%, #BAA6FF -22.78%, #6721FF 27.93%, #00CBFF 99.79%);
     --tg-gradient-color-two  : linear-gradient(87.22deg, #C8BDFF -1.82%, #BAA6FF 5.99%, #6721FF 50.47%, #00CBFF 113.5%);
-    --tg-gradient-color-three: linear-gradient(89.09deg, #FAEC60 -4.93%, #E5A34B 8.69%, #EE6E4D 20.84%, #F44380 37.75%,
-            #BE3DB3 52.82%, #7746E6 73.27%, #5A71F1 89.06%, #439EFF 101.36%);
-    ;
-    --tg-body-font-color    : #C8B8E8;
-    --tg-heading-font-color : #FFFFFF;
-    --tg-paragraph-color    : #C8B8E8;
+    --tg-gradient-color-three: linear-gradient(89.09deg, #FAEC60 -4.93%, #E5A34B 8.69%, #EE6E4D 20.84%, #F44380 37.75%, #BE3DB3 52.82%, #7746E6 73.27%, #5A71F1 89.06%, #439EFF 101.36%);
+
+    --tg-body-font-color    : #C8B8E8; /* Text color */
+    --tg-heading-font-color : #FFFFFF; /* Heading color */
+    --tg-paragraph-color    : #C8B8E8; /* Paragraph text color */
+
     --tg-body-font-size     : 16px;
     --tg-body-font-weight   : 400;
     --tg-heading-font-weight: 700;
     --tg-body-line-height   : 1.75;
     --tg-heading-line-height: 1.2;
-    --tg-blue               : #270A5F;
-    --tg-cetacean-blue      : #12032F;
-    --tg-indigo             : #6610f2;
-    --tg-purple             : #6f42c1;
-    --tg-pink               : #d63384;
-    --tg-red                : #dc3545;
-    --tg-orange             : #fd7e14;
-    --tg-yellow             : #FDCF6D;
-    --tg-green              : #198754;
-    --tg-teal               : #20c997;
-    --tg-cyan               : #00C39A;
-    --tg-white              : #ffffff;
-    --tg-black              : #0D0126;
-    --tg-black-two          : #160042;
-    --tg-black-three        : #151515;
-    --tg-black-four         : #222325;
-    --tg-gray               : #F1F3FA;
-    --tg-gray-two           : #474C56;
-    --tg-gray-three         : #ABABAB;
-    --tg-gray-four          : #F0F0F0;
-    --facebook              : #3b5998;
-    --twitter               : #00acee;
-    --linkedin              : #1976d2;
-    --pinterest             : #3b5998;
-    --youtube               : #c4302b;
-    --skype                 : #00aff0;
+
+    --tg-blue               : #270A5F; /* Dark blue */
+    --tg-cetacean-blue      : #12032F; /* Very dark blue */
+    --tg-indigo             : #6610f2; /* Indigo */
+    --tg-purple             : #6f42c1; /* Purple */
+    --tg-pink               : #d63384; /* Pink */
+    --tg-red                : #dc3545; /* Red */
+    --tg-orange             : #fd7e14; /* Orange */
+    --tg-yellow             : #FDCF6D; /* Yellow */
+    --tg-green              : #198754; /* Green */
+    --tg-teal               : #20c997; /* Teal */
+    --tg-cyan               : #00C39A; /* Cyan */
+    --tg-white              : #ffffff; /* White */
+    --tg-black              : #0D0126; /* Very dark black */
+    --tg-black-two          : #160042; /* Darker black */
+    --tg-black-three        : #151515; /* Black */
+    --tg-black-four         : #222325; /* Slightly lighter black */
+    --tg-gray               : #F1F3FA; /* Light gray */
+    --tg-gray-two           : #474C56; /* Medium gray */
+    --tg-gray-three         : #ABABAB; /* Gray */
+    --tg-gray-four          : #F0F0F0; /* Very light gray */
+
+    --facebook              : #3b5998; /* Facebook color */
+    --twitter               : #00acee; /* Twitter color */
+    --linkedin              : #1976d2; /* LinkedIn color */
+    --pinterest             : #bd081c; /* Pinterest color */
+    --youtube               : #c4302b; /* YouTube color */
+    --skype                 : #00aff0; /* Skype color */
 }
+
 
 body {
     font-family: var(--tg-body-font-family);

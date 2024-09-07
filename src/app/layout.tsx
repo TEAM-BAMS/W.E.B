@@ -7,9 +7,9 @@ import { Toaster } from "@/components/ui/sonner"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "VSAI | Your AI Code Translator",
+  title: "W.E.B - AI Code Translator",
   description: "Translate code snippets to different languages with the help of AI",
-  manifest: "/manifest.json",
+  // manifest: "/manifest.json",
   openGraph: {
     type: 'website',
     images: [
@@ -20,10 +20,10 @@ export const metadata: Metadata = {
       },
     ],
   },
-  icons: {
-    icon: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
+  // icons: {
+  //   icon: "/favicon-32x32.png",
+  //   apple: "/apple-touch-icon.png",
+  // },
 };
 
 export const viewport: Viewport = {
